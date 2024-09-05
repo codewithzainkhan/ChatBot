@@ -1,0 +1,49 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hello", "Hi", "Hey", "Hi there"],
+            "responses": ["Hello!", "Hi!", "Hey!", "How can I assist you?"]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Bye", "See you later", "Goodbye"],
+            "responses": ["Goodbye!", "See you later!", "Take care!"]
+        },
+        {
+            "tag": "book_appointment",
+            "patterns": ["I want to book an appointment", "Can I schedule a visit?", "Book a dental appointment"],
+            "responses": ["Sure, I can help you with that. Please provide your name and contact information."]
+        },
+        {
+            "tag": "services",
+            "patterns": ["What services do you offer?", "Tell me about your services", "Dental services available"],
+            "responses": ["We offer cleanings, fillings, consultations, and more. How can we assist you?"]
+        },
+        {
+            "tag": "appointment_followup",
+            "patterns": ["I want to book an appointment", "Can I schedule a visit?", "Book a dental appointment"],
+            "responses": ["I have noted your request. Could you please provide your name and contact number?"]
+        },
+        {
+            "tag": "provide_name",
+            "patterns": ["My name is", "I am", "Call me"],
+            "responses": ["Thank you, {name}. What date and time would you prefer for your appointment?"]
+        },
+        {
+            "tag": "provide_contact",
+            "patterns": ["My contact number is", "You can reach me at", "Contact number"],
+            "responses": ["Got it, {name}. I have scheduled your appointment. Here are the available dates and times: [Date 1, Date 2, Date 3]."]
+        },
+        {
+            "tag": "provide_date",
+            "patterns": ["I would like to schedule on", "For the date", "Set the appointment for","book it for"],
+            "responses": ["Date {date} noted! Please provide a time slot from the available times: [Time 1, Time 2, Time 3]."]
+        },
+        {
+            "tag": "provide_time",
+            "patterns": ["I would like to set the time at", "The time should be", "Schedule it for","book it for"],
+            "responses": ["Time {time} noted! Your appointment has been booked. We will contact you at {contact}."]
+        }
+    ]
+}
